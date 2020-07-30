@@ -1,5 +1,5 @@
 class Dog < ApplicationRecord
   has_many :strolls
   has_many :dogsitters, through: :strolls
-  belongs_to :city
+  belongs_to :city, optional: true
 end
